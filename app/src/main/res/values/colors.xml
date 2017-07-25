@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#795548</color>
+
+    <color name="dhofarlogo">#5E35B1</color>
+    <color name="text_Color_Primary">#BF360C</color>
+    <color name="text_Appearance_Inverse">#FF7043</color>
+    <color name="dose_color">#757575</color>
+</resources>

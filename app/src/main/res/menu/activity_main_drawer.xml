@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hospital"
+            android:icon="@drawable/ic_local_hospital_green_600_24dp"
+            android:title="Medicine" />
+        <item
+            android:id="@+id/nav_healing"
+            android:icon="@drawable/ic_healing_green_600_24dp"
+            android:title="Common" />
+        <item
+            android:id="@+id/nav_event_note"
+            android:icon="@drawable/ic_event_note_green_600_24dp"
+            android:title="Time Take" />
+    </group>
+</menu>
