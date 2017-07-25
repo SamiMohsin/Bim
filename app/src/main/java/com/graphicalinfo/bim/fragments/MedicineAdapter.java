@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.graphicalinfo.bim.R;
 import com.graphicalinfo.bim.entities.Drugs;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.Medici
 
 
     private ArrayList<Drugs> drugs;
-
+    DecimalFormat df = new DecimalFormat("###.#");
     public MedicineAdapter(ArrayList<Drugs> drugs) {
         this.drugs = drugs;
     }
@@ -39,12 +40,16 @@ public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.Medici
         holder.name.setText("Generic Name: ");
         holder.trade.setText("Trade Name: ");
         holder.mg.setText("Dosage: ");
+
         holder.name.append(drug.getName());
         holder.trade.append(drug.getTrade());
-        holder.mg.append(String.valueOf(drug.getMg()));
-        holder.mg.append("/");
-        holder.ml.setText(String.valueOf(drug.getMl()));
-        holder.ml.append("ml");
+
+        holder.mg.append(df.format(drug.getMg()));
+        holder.mg.append(" mg");
+        holder.mg.append(" / ");
+
+        holder.ml.setText(df.format(drug.getMl()));
+        holder.ml.append(" ml");
 
 
     }

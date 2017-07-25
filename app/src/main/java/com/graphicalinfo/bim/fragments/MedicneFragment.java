@@ -63,8 +63,8 @@ public class MedicneFragment  extends Fragment{
 
 
     public ArrayList<Drugs> getData(){
-        drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Acetaminophen","Paracetamol Drops", 1.0,2.0));
-        drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Sami","Sami", 1.0,2.0));
+        drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Acetaminophen","Paracetamol Drops", 100.0,1.0));
+        drugs.add(new Drugs(getResources().getDrawable(R.drawable.histop), "Chlorpheniramine maleate","Zeet, Histop", 2.0,5.0));
         drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Sami","Sami", 1.0,2.0));
         drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Sami","Sami", 1.0,2.0));
         drugs.add(new Drugs(getResources().getDrawable(R.drawable.drops), "Sami","Sami", 1.0,2.0));
